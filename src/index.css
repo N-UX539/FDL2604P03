@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  /* navbar dynamic height */
+  --navheight: clamp(64px,8vw,72px);
+
+  /* dynamic root colors */
+  --blue: #473bf0;
+  --dark-blue: #3023de;
+  --black: #161c2d;
+  --red: #f74d4d;
+  --green: #68d585;
+  --white: #fff;
+
+  /* dynamic box shadows */
+  --box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+
+  /* dynamic web fonts */
+  --font-family: "Montserrat", system-ui;
+  --font-rubik: "Rubik", system-ui;
+  --font-dynalight: "Dynalight", system-ui;
+}
+
+@theme {
+  /* root font families */
+  --font-family: var(--font-family);
+  --font-rubik: var(--font-rubik);
+  --font-dynalight: var(--font-dynalight);
+}

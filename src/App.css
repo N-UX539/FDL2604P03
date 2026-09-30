@@ -1,0 +1,15 @@
+.underline-fx {
+  background: linear-gradient(currentColor, currentColor) bottom left / 0% 2px
+    no-repeat;
+  transition: background-size 0.25s ease-in-out;
+}
+@media (min-width: 64rem) {
+  .underline-fx {
+    padding-block: 0.0675rem;
+    padding-inline: 0.625rem;
+  }
+  .underline-fx:hover,
+  .underline-fx.active {
+    background-size: 100% 2px;
+  }
+}
